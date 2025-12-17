@@ -1,0 +1,130 @@
+:root {
+    --main:#2563eb;
+    --bg:#f8fafc;
+    --text:#0f172a;
+    --sub:#64748b;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: var(--sub);
+    font-weight: 500;
+  }
+  
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+  
+  .hero {
+    padding: 120px 24px 100px;
+    text-align: center;
+    background: linear-gradient(180deg,#fff,#eef2ff);
+  }
+  
+  .hero h2 {
+    font-size: clamp(28px,4vw,44px);
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    color: var(--sub);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--main);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .section {
+    padding: 80px 24px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 32px;
+  }
+  
+  .feature, .price-box, form {
+    background: #fff;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  }
+  
+  .price {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 16px;
+  }
+  
+  .error {
+    color: #dc2626;
+    text-align: center;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--sub);
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      position: absolute;
+      top: 72px;
+      right: 24px;
+      background: #fff;
+      flex-direction: column;
+      padding: 24px;
+      border-radius: 16px;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  }
+  
